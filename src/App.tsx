@@ -14,7 +14,7 @@ interface ISecondCounterState {
 
 const SecondCounterContext = buildContext<ISecondCounterState>({ count2: 100 });
 
-const SecondBaseComponent = (props: any) => (
+const SecondBaseComponent = (props: ISecondCounterState) => (
   <div>
     <h2>Second: {props.count2}</h2>
     <button
